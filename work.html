@@ -332,7 +332,76 @@
     .project-card.visible {
       animation: fadeUp 0.28s ease forwards;
     }
-  </style>
+  
+    /* ===== MOBILE RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      /* NAV */
+      nav {
+        padding: 0.85rem 1.25rem;
+        flex-wrap: wrap;
+        gap: 0;
+        align-items: center;
+      }
+      .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        border-top: 1px solid var(--gray-2);
+        padding: 0.6rem 0 0;
+        gap: 1.5rem;
+        margin-top: 0.6rem;
+      }
+      .nav-cta { font-size: 11px; padding: 6px 14px; }
+
+      /* FOOTER */
+      footer {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+        padding: 1.5rem 1.25rem;
+      }
+      .footer-links { justify-content: center; }
+
+      /* PAGE HERO */
+      .page-hero {
+        padding: 2.5rem 1.25rem 1.75rem;
+        padding-top: 110px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+      }
+      .hero-left { max-width: 100%; }
+      .hero-count { text-align: left; }
+      .count-num { font-size: 40px; }
+
+      /* FILTER BAR */
+      .filter-bar {
+        padding: 0.75rem 1.25rem;
+        top: 90px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+        gap: 8px;
+        scrollbar-width: none;
+      }
+      .filter-bar::-webkit-scrollbar { display: none; }
+      .filter-btn { white-space: nowrap; flex-shrink: 0; }
+
+      /* WORK SECTION */
+      .work-section { padding: 1.5rem 1.25rem; }
+      .section-heading { font-size: 10px; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+
+      /* PROJECT GRID */
+      .project-grid { grid-template-columns: 1fr; }
+      .card-thumb { aspect-ratio: 16/9; }
+
+      /* CONTACT */
+      .contact { padding: 3rem 1.25rem; }
+      .contact-btns { flex-direction: column; align-items: center; }
+      .contact-btns .btn-primary,
+      .contact-btns .btn-secondary { width: 100%; text-align: center; }
+    }
+</style>
 </head>
 <body>
 

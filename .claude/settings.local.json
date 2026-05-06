@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__playwright__browser_resize",
+      "mcp__playwright__browser_navigate",
+      "Bash(npx --version)",
+      "mcp__playwright__browser_take_screenshot",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Bash(node:*)",
+      "Bash(echo $TMPDIR)",
+      "Read(//d/Side Project/M Website/**)",
+      "Bash(cd:*)"
+    ]
+  }
+}

@@ -308,7 +308,98 @@
       font-size: 15px; color: var(--gray-4);
       font-weight: 300; line-height: 1.8;
     }
-  </style>
+  
+    /* ===== MOBILE RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      /* NAV */
+      nav {
+        padding: 0.85rem 1.25rem;
+        flex-wrap: wrap;
+        gap: 0;
+        align-items: center;
+      }
+      .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        border-top: 1px solid var(--gray-2);
+        padding: 0.6rem 0 0;
+        gap: 1.5rem;
+        margin-top: 0.6rem;
+      }
+      .nav-cta { font-size: 11px; padding: 6px 14px; }
+
+      /* FOOTER */
+      footer {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+        padding: 1.5rem 1.25rem;
+      }
+      .footer-links { justify-content: center; }
+
+      /* PAGE HEADER */
+      .page-header {
+        grid-template-columns: 1fr;
+        padding-top: 100px;
+        min-height: auto;
+      }
+      .page-header-left {
+        padding: 2.5rem 1.25rem;
+        border-right: none;
+        border-bottom: 1px solid var(--gray-2);
+      }
+      .page-header-right {
+        padding: 2rem 1.25rem;
+        min-height: 280px;
+      }
+      .photo-frame { width: 180px; height: 220px; }
+
+      /* QUOTE */
+      .quote-section {
+        padding: 2.5rem 1.25rem;
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+      }
+      .quote-mark { font-size: 56px; margin-top: 0; }
+      .quote-text { font-size: 18px; }
+
+      /* EXPERIENCE */
+      .experience { padding: 3rem 1.25rem; }
+      .exp-row { grid-template-columns: 1fr; }
+      .exp-date {
+        padding: 0.75rem 1.25rem;
+        border-right: none;
+        border-bottom: 1px solid var(--gray-2);
+      }
+      .exp-content { padding: 1.25rem; }
+
+      /* CLIENTS */
+      .clients { padding: 2.5rem 1.25rem; }
+
+      /* EDUCATION */
+      .education { padding: 3rem 1.25rem; }
+      .edu-grid { grid-template-columns: 1fr; }
+
+      /* TOOLS */
+      .tools { padding: 2.5rem 1.25rem; }
+
+      /* CONTACT */
+      .contact { padding: 3rem 1.25rem; }
+      .contact-btns { flex-direction: column; align-items: center; }
+      .contact-btns .btn-primary,
+      .contact-btns .btn-secondary { width: 100%; text-align: center; }
+    }
+
+    /* LANDSCAPE HEADER — mobile fix */
+    @media (max-width: 768px) {
+      .page-header-landscape { padding-top: 90px; }
+      .landscape-img-wrap { max-height: 220px; }
+      .landscape-text { padding: 2rem 1.25rem; }
+      .landscape-text .page-title { font-size: clamp(28px, 7vw, 42px); }
+    }
+</style>
 </head>
 <body>
 
